@@ -1,0 +1,14 @@
+1. What happens when you initialize a repository? Why do you need to do it?
+
+	A hidden folder called git is created within the repository which stores the git metadata.  Git init does
+		not automatically create a commit of your repository.  You need to add the files that you want to track 
+		and	make your own commit.  
+	You need to do it to use git tracking.
+
+2. How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	It holds only the files from the working directory that you want to commit.
+	It allows you to logically decide how to commit files.  Some should be committed together, while others should
+		remain separate.
+		
+3.
