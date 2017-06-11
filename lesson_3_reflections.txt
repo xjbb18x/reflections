@@ -1,3 +1,42 @@
 1. When would you want to use a remote repository rather than keeping all your work local?
   
-  If you want to collaborate with others on a project or work from multiple locations.
+	If you want to collaborate with others on a project or work from multiple locations.
+
+  
+2. Why might you want to always pull changes manually rather than having Git automatically stay up-to-date 
+	with your remote repository?
+	
+	You may not want to introduce changes from a public respository into your local repository or vise/versa
+
+
+3. Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+	A branch is located on your local respository and not necessarily on github.  Use this to keep experimental
+		features private while still maintaining the master on github.
+	A clone is a local copy of a repository.  Use this to work on files that can't be easily edited on github.
+	A fork is a copy of a github repository.  Use this when copying someone else's github repo.  
+		this will give credit to the original author and is easier than cloning/creating a repo/pushing.
+		You can fork with one click on github.
+		
+
+4. What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	You can use it to keep track of changes you have made that you haven't pushed to the remote.
+	You can use it to compare the current state of the remote to it's state when you last pulled.
+	
+	
+5. How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+	I would use something like dropbox. 
+	It would be easier to keep files up to date (automatic with dropbox).
+	It would be difficult to find or work with previous versions of files unless you save separate files.
+	It would be harder to track changes in a group of files.
+	
+	
+6. When would you want to make changes in a separate branch rather than directly in master? What
+	benefits does each approach have?
+
+	If you are trying something experimental that might break master.
+	Making changes only in master makes tracking commits easier.
+	Using a separate branch allows riskier changes to be made and tested without interfering with 
+		the working program.
