@@ -1,14 +1,53 @@
 1. What happens when you initialize a repository? Why do you need to do it?
 
-	A hidden folder called git is created within the repository which stores the git metadata.  Git init does
-		not automatically create a commit of your repository.  You need to add the files that you want to track 
+	A hidden folder called git is created within the repository 
+		which stores the git metadata.  Git init does not automatically create a 
+		commit of your repository.  You need to add the files that you want to track 
 		and	make your own commit.  
 	You need to do it to use git tracking.
 
+	
 2. How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 	It holds only the files from the working directory that you want to commit.
 	It allows you to logically decide how to commit files.  Some should be committed together, while others should
 		remain separate.
 		
-3.
+		
+3. How can you use the staging area to make sure you have one commit per logical change?
+
+	You can only add the files that you have changed to the staging area that will go into the commit. 
+	You can compare the staging area with the working directory. using git diff
+	You can compare the staging area with the last commit using git diff --staged
+
+	
+4. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	Experimental features or foreign language versions.  Branches allow you to keep the main working version while working
+		on the experimental version or foreign languange version.
+		
+		
+5. How do the diagrams help you visualize the branch structure?
+
+	By showing you how you trace back through each branch, and how commits can become unreachable.
+	It also helps you visualize where each branch was made and what changes have been made to master since then.
+	
+	
+6. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	The code from each branch is merged together. 
+	The history from each branch is retained in the merged branch.
+	
+
+7. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	
+	Pros - it merges your code automatically; it doesn't merge if there is a conflict; if there 
+		is a conflict, git hightlights the conflicts in the files so you can easily resolve them.
+	Cons - when merging code, git just merges it, it's not intuitive (i.e. - it didn't know to add 
+		color to the coins, which were created in a branch made before the color update)
+
+		
+
+	
+
+8. 
